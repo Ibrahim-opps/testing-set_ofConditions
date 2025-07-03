@@ -1,42 +1,8 @@
 <html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character indentification</title>
 </head>
 <body>
     <script src="app.js"></script>
 </body>
 </html>
-<script>
-
-let ch = prompt("Enter a single character:");
-if (ch.length !== 1) {
-    console.log("Please enter exactly one character.");
-} else {
-    if (ch >= '0' && ch <= '9') {
-        console.log(`'${ch}' is a number.`);
-    } else if (ch >= 'A' && ch <= 'Z') {
-        console.log(`'${ch}' is an uppercase letter.`);
-    } else if (ch >= 'a' && ch <= 'z') {
-        console.log(`'${ch}' is a lowercase letter.`);
-    } else {
-        console.log(`'${ch}' is neither a number nor a letter.`);
-    }
-}
-let chursy = prompt("Enter a value from 0-100 or a letter from a-z:");
-if (ch.length === 0) {
-    console.log("Please enter a value.");
-} else {
-    let num = Number(ch);
-    if (!isNaN(num) && num >= 0 && num <= 100) {
-        console.log(`'${ch}' is a number between 0 and 100.`);
-    } else if (ch.length === 1 && ch >= 'a' && ch <= 'z') {
-        console.log(`'${ch}' is a lowercase letter.`);
-    } else {
-        console.log(`'${ch}' is neither a number between 0 and 100 nor a lowercase letter.`);
-    }
-}
-
-</script>
